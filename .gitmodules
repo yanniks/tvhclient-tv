@@ -1,0 +1,6 @@
+[submodule "tvheadend-ios-lib"]
+	path = tvheadend-ios-lib
+	url = https://github.com/zipleen/tvheadend-ios-lib.git
+[submodule "vendor/SDWebImage"]
+	path = vendor/SDWebImage
+	url = https://github.com/rs/SDWebImage.git

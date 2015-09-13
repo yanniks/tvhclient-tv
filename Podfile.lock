@@ -1,0 +1,10 @@
+PODS:
+  - PDKeychainBindingsController (0.0.1)
+
+DEPENDENCIES:
+  - PDKeychainBindingsController (~> 0.0)
+
+SPEC CHECKSUMS:
+  PDKeychainBindingsController: fa8cb3cf99f2ea9240d61066ed0549f34e2cec3c
+
+COCOAPODS: 0.39.0.beta.4

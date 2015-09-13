@@ -1,0 +1,892 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CEE6D070947611B58C419E3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C94C9BB2B93457865F0F2EB6 /* libPods.a */; };
+		F007C8771BA4D3DC006C4C08 /* TVHChannelCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8761BA4D3DC006C4C08 /* TVHChannelCollectionViewController.m */; };
+		F007C87A1BA4D60B006C4C08 /* TVHChannelViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8791BA4D60B006C4C08 /* TVHChannelViewCell.m */; };
+		F007C87D1BA4FE40006C4C08 /* TVHChannelHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C87C1BA4FE40006C4C08 /* TVHChannelHeaderCell.m */; };
+		F007C8B91BA62230006C4C08 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C89A1BA62230006C4C08 /* NSData+ImageContentType.m */; };
+		F007C8BA1BA62230006C4C08 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C89C1BA62230006C4C08 /* SDImageCache.m */; };
+		F007C8BB1BA62230006C4C08 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C89E1BA62230006C4C08 /* SDWebImageCompat.m */; };
+		F007C8BC1BA62230006C4C08 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8A01BA62230006C4C08 /* SDWebImageDecoder.m */; };
+		F007C8BD1BA62230006C4C08 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8A21BA62230006C4C08 /* SDWebImageDownloader.m */; };
+		F007C8BE1BA62230006C4C08 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8A41BA62230006C4C08 /* SDWebImageDownloaderOperation.m */; };
+		F007C8BF1BA62230006C4C08 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8A61BA62230006C4C08 /* SDWebImageManager.m */; };
+		F007C8C01BA62230006C4C08 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8A91BA62230006C4C08 /* SDWebImagePrefetcher.m */; };
+		F007C8C11BA62230006C4C08 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8AB1BA62230006C4C08 /* UIButton+WebCache.m */; };
+		F007C8C21BA62230006C4C08 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8AD1BA62230006C4C08 /* UIImage+GIF.m */; };
+		F007C8C31BA62230006C4C08 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8AF1BA62230006C4C08 /* UIImage+MultiFormat.m */; };
+		F007C8C41BA62230006C4C08 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8B11BA62230006C4C08 /* UIImage+WebP.m */; };
+		F007C8C51BA62230006C4C08 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8B31BA62230006C4C08 /* UIImageView+HighlightedWebCache.m */; };
+		F007C8C61BA62230006C4C08 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8B51BA62230006C4C08 /* UIImageView+WebCache.m */; };
+		F007C8C71BA62230006C4C08 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8B71BA62230006C4C08 /* UIView+WebCacheOperation.m */; };
+		F007C8CA1BA622F4006C4C08 /* TVHImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8C91BA622F4006C4C08 /* TVHImageCache.m */; };
+		F04ADD491BA47F9300B321DE /* libTVVLCKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F04ADD481BA47F9300B321DE /* libTVVLCKit.a */; };
+		F08C12631BA245480049A63A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C12621BA245480049A63A /* QuartzCore.framework */; };
+		F08C12651BA2454D0049A63A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C12641BA2454D0049A63A /* CoreText.framework */; };
+		F08C12671BA245510049A63A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C12661BA245510049A63A /* AVFoundation.framework */; };
+		F08C12691BA245560049A63A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C12681BA245560049A63A /* Security.framework */; };
+		F08C126B1BA245610049A63A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C126A1BA245610049A63A /* AudioToolbox.framework */; };
+		F08C126D1BA245670049A63A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C126C1BA245670049A63A /* OpenGLES.framework */; };
+		F08C126F1BA2456B0049A63A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C126E1BA2456B0049A63A /* CoreGraphics.framework */; };
+		F08C12711BA245740049A63A /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C12701BA245740049A63A /* libxml2.tbd */; };
+		F08C12731BA245790049A63A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C12721BA245790049A63A /* libiconv.tbd */; };
+		F08C12751BA245850049A63A /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C12741BA245850049A63A /* libbz2.tbd */; };
+		F08C12771BA2458D0049A63A /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C12761BA2458D0049A63A /* libstdc++.tbd */; };
+		F08C127F1BA24D7B0049A63A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C127E1BA24D7B0049A63A /* SystemConfiguration.framework */; };
+		F0CDE3EC1BA20C6D000A969B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE3EB1BA20C6D000A969B /* main.m */; };
+		F0CDE3EF1BA20C6D000A969B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE3EE1BA20C6D000A969B /* AppDelegate.m */; };
+		F0CDE3F21BA20C6D000A969B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE3F11BA20C6D000A969B /* FirstViewController.m */; };
+		F0CDE3F51BA20C6D000A969B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE3F41BA20C6D000A969B /* SecondViewController.m */; };
+		F0CDE3F81BA20C6D000A969B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CDE3F61BA20C6D000A969B /* Main.storyboard */; };
+		F0CDE3FA1BA20C6D000A969B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CDE3F91BA20C6D000A969B /* Assets.xcassets */; };
+		F0CDE4051BA20C6D000A969B /* TvhClient_TvTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE4041BA20C6D000A969B /* TvhClient_TvTests.m */; };
+		F0CDE4461BA20FE8000A969B /* NSString+FileSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE43D1BA20FE8000A969B /* NSString+FileSize.m */; };
+		F0CDE4471BA20FE8000A969B /* TVHDebugLytics.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE43F1BA20FE8000A969B /* TVHDebugLytics.m */; };
+		F0CDE4481BA20FE8000A969B /* TVHModelAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE4411BA20FE8000A969B /* TVHModelAnalytics.m */; };
+		F0CDE4491BA20FE8000A969B /* TVHSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE4431BA20FE8000A969B /* TVHSettings.m */; };
+		F0CDE44A1BA20FE8000A969B /* TVHSingletonServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE4451BA20FE8000A969B /* TVHSingletonServer.m */; };
+		F0CDE4501BA212AE000A969B /* TVHAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE44F1BA212AE000A969B /* TVHAnalytics.m */; };
+		F0CDE4F31BA21A0B000A969B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CDE4F21BA21A0B000A969B /* libz.tbd */; };
+		F0CDE4FB1BA21A2E000A969B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CDE4FA1BA21A2E000A969B /* MediaPlayer.framework */; };
+		F0CDE4FD1BA21A3D000A969B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CDE4FC1BA21A3D000A969B /* CFNetwork.framework */; };
+		F0CDE5001BA2206C000A969B /* libtvheadend-tvOS-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CDE4F71BA21A0B000A969B /* libtvheadend-tvOS-lib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0CDE4011BA20C6D000A969B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CDE3DF1BA20C6D000A969B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0CDE3E61BA20C6D000A969B;
+			remoteInfo = "TvhClient-Tv";
+		};
+		F0CDE4151BA20E30000A969B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CDE4101BA20E30000A969B /* tvheadend-ios-lib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABF3A4C185E586700E62240;
+			remoteInfo = "tvheadend-ios-lib";
+		};
+		F0CDE4171BA20E30000A969B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CDE4101BA20E30000A969B /* tvheadend-ios-lib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABF3A5C185E586700E62240;
+			remoteInfo = "tvheadend-ios-libTests";
+		};
+		F0CDE4F61BA21A0B000A969B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CDE4101BA20E30000A969B /* tvheadend-ios-lib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0CDE46D1BA214A2000A969B;
+			remoteInfo = "tvheadend-tvOS-lib";
+		};
+		F0CDE4F81BA21A0B000A969B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CDE4101BA20E30000A969B /* tvheadend-ios-lib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0CDE47A1BA214C3000A969B;
+			remoteInfo = "tvheadend-tvOS-libTests";
+		};
+		F0CDE4FE1BA22063000A969B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CDE4101BA20E30000A969B /* tvheadend-ios-lib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F0CDE46C1BA214A2000A969B;
+			remoteInfo = "tvheadend-tvOS-lib";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		414E73BCB7D68222E3F19490 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6C054FAF5C493F48B9C887A9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C94C9BB2B93457865F0F2EB6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F007C8751BA4D3DC006C4C08 /* TVHChannelCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVHChannelCollectionViewController.h; sourceTree = "<group>"; };
+		F007C8761BA4D3DC006C4C08 /* TVHChannelCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVHChannelCollectionViewController.m; sourceTree = "<group>"; };
+		F007C8781BA4D60B006C4C08 /* TVHChannelViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVHChannelViewCell.h; sourceTree = "<group>"; };
+		F007C8791BA4D60B006C4C08 /* TVHChannelViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVHChannelViewCell.m; sourceTree = "<group>"; };
+		F007C87B1BA4FE40006C4C08 /* TVHChannelHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVHChannelHeaderCell.h; sourceTree = "<group>"; };
+		F007C87C1BA4FE40006C4C08 /* TVHChannelHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVHChannelHeaderCell.m; sourceTree = "<group>"; };
+		F007C8991BA62230006C4C08 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "vendor/SDWebImage/SDWebImage/NSData+ImageContentType.h"; sourceTree = SOURCE_ROOT; };
+		F007C89A1BA62230006C4C08 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "vendor/SDWebImage/SDWebImage/NSData+ImageContentType.m"; sourceTree = SOURCE_ROOT; };
+		F007C89B1BA62230006C4C08 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = vendor/SDWebImage/SDWebImage/SDImageCache.h; sourceTree = SOURCE_ROOT; };
+		F007C89C1BA62230006C4C08 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = vendor/SDWebImage/SDWebImage/SDImageCache.m; sourceTree = SOURCE_ROOT; };
+		F007C89D1BA62230006C4C08 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = vendor/SDWebImage/SDWebImage/SDWebImageCompat.h; sourceTree = SOURCE_ROOT; };
+		F007C89E1BA62230006C4C08 /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = vendor/SDWebImage/SDWebImage/SDWebImageCompat.m; sourceTree = SOURCE_ROOT; };
+		F007C89F1BA62230006C4C08 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = vendor/SDWebImage/SDWebImage/SDWebImageDecoder.h; sourceTree = SOURCE_ROOT; };
+		F007C8A01BA62230006C4C08 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = vendor/SDWebImage/SDWebImage/SDWebImageDecoder.m; sourceTree = SOURCE_ROOT; };
+		F007C8A11BA62230006C4C08 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = vendor/SDWebImage/SDWebImage/SDWebImageDownloader.h; sourceTree = SOURCE_ROOT; };
+		F007C8A21BA62230006C4C08 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = vendor/SDWebImage/SDWebImage/SDWebImageDownloader.m; sourceTree = SOURCE_ROOT; };
+		F007C8A31BA62230006C4C08 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = vendor/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = SOURCE_ROOT; };
+		F007C8A41BA62230006C4C08 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = vendor/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = SOURCE_ROOT; };
+		F007C8A51BA62230006C4C08 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = vendor/SDWebImage/SDWebImage/SDWebImageManager.h; sourceTree = SOURCE_ROOT; };
+		F007C8A61BA62230006C4C08 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = vendor/SDWebImage/SDWebImage/SDWebImageManager.m; sourceTree = SOURCE_ROOT; };
+		F007C8A71BA62230006C4C08 /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = vendor/SDWebImage/SDWebImage/SDWebImageOperation.h; sourceTree = SOURCE_ROOT; };
+		F007C8A81BA62230006C4C08 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = vendor/SDWebImage/SDWebImage/SDWebImagePrefetcher.h; sourceTree = SOURCE_ROOT; };
+		F007C8A91BA62230006C4C08 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = vendor/SDWebImage/SDWebImage/SDWebImagePrefetcher.m; sourceTree = SOURCE_ROOT; };
+		F007C8AA1BA62230006C4C08 /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "vendor/SDWebImage/SDWebImage/UIButton+WebCache.h"; sourceTree = SOURCE_ROOT; };
+		F007C8AB1BA62230006C4C08 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "vendor/SDWebImage/SDWebImage/UIButton+WebCache.m"; sourceTree = SOURCE_ROOT; };
+		F007C8AC1BA62230006C4C08 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "vendor/SDWebImage/SDWebImage/UIImage+GIF.h"; sourceTree = SOURCE_ROOT; };
+		F007C8AD1BA62230006C4C08 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "vendor/SDWebImage/SDWebImage/UIImage+GIF.m"; sourceTree = SOURCE_ROOT; };
+		F007C8AE1BA62230006C4C08 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "vendor/SDWebImage/SDWebImage/UIImage+MultiFormat.h"; sourceTree = SOURCE_ROOT; };
+		F007C8AF1BA62230006C4C08 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "vendor/SDWebImage/SDWebImage/UIImage+MultiFormat.m"; sourceTree = SOURCE_ROOT; };
+		F007C8B01BA62230006C4C08 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+WebP.h"; path = "vendor/SDWebImage/SDWebImage/UIImage+WebP.h"; sourceTree = SOURCE_ROOT; };
+		F007C8B11BA62230006C4C08 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+WebP.m"; path = "vendor/SDWebImage/SDWebImage/UIImage+WebP.m"; sourceTree = SOURCE_ROOT; };
+		F007C8B21BA62230006C4C08 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "vendor/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = SOURCE_ROOT; };
+		F007C8B31BA62230006C4C08 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "vendor/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = SOURCE_ROOT; };
+		F007C8B41BA62230006C4C08 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "vendor/SDWebImage/SDWebImage/UIImageView+WebCache.h"; sourceTree = SOURCE_ROOT; };
+		F007C8B51BA62230006C4C08 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "vendor/SDWebImage/SDWebImage/UIImageView+WebCache.m"; sourceTree = SOURCE_ROOT; };
+		F007C8B61BA62230006C4C08 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "vendor/SDWebImage/SDWebImage/UIView+WebCacheOperation.h"; sourceTree = SOURCE_ROOT; };
+		F007C8B71BA62230006C4C08 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "vendor/SDWebImage/SDWebImage/UIView+WebCacheOperation.m"; sourceTree = SOURCE_ROOT; };
+		F007C8C81BA622F4006C4C08 /* TVHImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVHImageCache.h; sourceTree = "<group>"; };
+		F007C8C91BA622F4006C4C08 /* TVHImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVHImageCache.m; sourceTree = "<group>"; };
+		F04ADD481BA47F9300B321DE /* libTVVLCKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTVVLCKit.a; path = "../VLCKit/build/Debug-appletvos/libTVVLCKit.a"; sourceTree = "<group>"; };
+		F08C12621BA245480049A63A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F08C12641BA2454D0049A63A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		F08C12661BA245510049A63A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F08C12681BA245560049A63A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F08C126A1BA245610049A63A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F08C126C1BA245670049A63A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F08C126E1BA2456B0049A63A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F08C12701BA245740049A63A /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		F08C12721BA245790049A63A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		F08C12741BA245850049A63A /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		F08C12761BA2458D0049A63A /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		F08C12791BA249E60049A63A /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileVLCKit.framework; path = "../tvheadend-iphone-client/Pods/MobileVLCKit/MobileVLCKit-binary/MobileVLCKit.framework"; sourceTree = "<group>"; };
+		F08C127E1BA24D7B0049A63A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F0CDE3E71BA20C6D000A969B /* TvhClient-Tv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TvhClient-Tv.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0CDE3EB1BA20C6D000A969B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0CDE3ED1BA20C6D000A969B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F0CDE3EE1BA20C6D000A969B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F0CDE3F01BA20C6D000A969B /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		F0CDE3F11BA20C6D000A969B /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		F0CDE3F31BA20C6D000A969B /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		F0CDE3F41BA20C6D000A969B /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F0CDE3F71BA20C6D000A969B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0CDE3F91BA20C6D000A969B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0CDE3FB1BA20C6D000A969B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0CDE4001BA20C6D000A969B /* TvhClient-TvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TvhClient-TvTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0CDE4041BA20C6D000A969B /* TvhClient_TvTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TvhClient_TvTests.m; sourceTree = "<group>"; };
+		F0CDE4061BA20C6D000A969B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0CDE4101BA20E30000A969B /* tvheadend-ios-lib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "tvheadend-ios-lib.xcodeproj"; path = "tvheadend-ios-lib/tvheadend-ios-lib.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		F0CDE43C1BA20FE8000A969B /* NSString+FileSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+FileSize.h"; path = "Model/NSString+FileSize.h"; sourceTree = "<group>"; };
+		F0CDE43D1BA20FE8000A969B /* NSString+FileSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+FileSize.m"; path = "Model/NSString+FileSize.m"; sourceTree = "<group>"; };
+		F0CDE43E1BA20FE8000A969B /* TVHDebugLytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVHDebugLytics.h; path = Model/TVHDebugLytics.h; sourceTree = "<group>"; };
+		F0CDE43F1BA20FE8000A969B /* TVHDebugLytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVHDebugLytics.m; path = Model/TVHDebugLytics.m; sourceTree = "<group>"; };
+		F0CDE4401BA20FE8000A969B /* TVHModelAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVHModelAnalytics.h; path = Model/TVHModelAnalytics.h; sourceTree = "<group>"; };
+		F0CDE4411BA20FE8000A969B /* TVHModelAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVHModelAnalytics.m; path = Model/TVHModelAnalytics.m; sourceTree = "<group>"; };
+		F0CDE4421BA20FE8000A969B /* TVHSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVHSettings.h; path = Model/TVHSettings.h; sourceTree = "<group>"; };
+		F0CDE4431BA20FE8000A969B /* TVHSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVHSettings.m; path = Model/TVHSettings.m; sourceTree = "<group>"; };
+		F0CDE4441BA20FE8000A969B /* TVHSingletonServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVHSingletonServer.h; path = Model/TVHSingletonServer.h; sourceTree = "<group>"; };
+		F0CDE4451BA20FE8000A969B /* TVHSingletonServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVHSingletonServer.m; path = Model/TVHSingletonServer.m; sourceTree = "<group>"; };
+		F0CDE44E1BA212AE000A969B /* TVHAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVHAnalytics.h; path = Model/TVHAnalytics.h; sourceTree = "<group>"; };
+		F0CDE44F1BA212AE000A969B /* TVHAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVHAnalytics.m; path = Model/TVHAnalytics.m; sourceTree = "<group>"; };
+		F0CDE4521BA2134D000A969B /* VLCConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLCConstants.h; sourceTree = "<group>"; };
+		F0CDE4F21BA21A0B000A969B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F0CDE4FA1BA21A2E000A969B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F0CDE4FC1BA21A3D000A969B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F0CDE5021BA220B8000A969B /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "tvheadend-ios-lib/vendor/GoogleCast.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0CDE3E41BA20C6D000A969B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F04ADD491BA47F9300B321DE /* libTVVLCKit.a in Frameworks */,
+				F08C127F1BA24D7B0049A63A /* SystemConfiguration.framework in Frameworks */,
+				F08C12771BA2458D0049A63A /* libstdc++.tbd in Frameworks */,
+				F08C12751BA245850049A63A /* libbz2.tbd in Frameworks */,
+				F0CDE4F31BA21A0B000A969B /* libz.tbd in Frameworks */,
+				F08C12731BA245790049A63A /* libiconv.tbd in Frameworks */,
+				F08C12711BA245740049A63A /* libxml2.tbd in Frameworks */,
+				F08C126F1BA2456B0049A63A /* CoreGraphics.framework in Frameworks */,
+				F08C126D1BA245670049A63A /* OpenGLES.framework in Frameworks */,
+				F08C126B1BA245610049A63A /* AudioToolbox.framework in Frameworks */,
+				F0CDE4FD1BA21A3D000A969B /* CFNetwork.framework in Frameworks */,
+				F08C12691BA245560049A63A /* Security.framework in Frameworks */,
+				F08C12671BA245510049A63A /* AVFoundation.framework in Frameworks */,
+				F08C12651BA2454D0049A63A /* CoreText.framework in Frameworks */,
+				F08C12631BA245480049A63A /* QuartzCore.framework in Frameworks */,
+				F0CDE5001BA2206C000A969B /* libtvheadend-tvOS-lib.a in Frameworks */,
+				F0CDE4FB1BA21A2E000A969B /* MediaPlayer.framework in Frameworks */,
+				0CEE6D070947611B58C419E3 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CDE3FD1BA20C6D000A969B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4ED5E6BA5C4CFDEDA8FFD52A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C054FAF5C493F48B9C887A9 /* Pods.debug.xcconfig */,
+				414E73BCB7D68222E3F19490 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F007C86F1BA4CEAE006C4C08 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				F007C8751BA4D3DC006C4C08 /* TVHChannelCollectionViewController.h */,
+				F007C8761BA4D3DC006C4C08 /* TVHChannelCollectionViewController.m */,
+				F007C8781BA4D60B006C4C08 /* TVHChannelViewCell.h */,
+				F007C8791BA4D60B006C4C08 /* TVHChannelViewCell.m */,
+				F007C87B1BA4FE40006C4C08 /* TVHChannelHeaderCell.h */,
+				F007C87C1BA4FE40006C4C08 /* TVHChannelHeaderCell.m */,
+			);
+			name = Channels;
+			sourceTree = "<group>";
+		};
+		F007C87E1BA61FE1006C4C08 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				F007C8991BA62230006C4C08 /* NSData+ImageContentType.h */,
+				F007C89A1BA62230006C4C08 /* NSData+ImageContentType.m */,
+				F007C89B1BA62230006C4C08 /* SDImageCache.h */,
+				F007C89C1BA62230006C4C08 /* SDImageCache.m */,
+				F007C89D1BA62230006C4C08 /* SDWebImageCompat.h */,
+				F007C89E1BA62230006C4C08 /* SDWebImageCompat.m */,
+				F007C89F1BA62230006C4C08 /* SDWebImageDecoder.h */,
+				F007C8A01BA62230006C4C08 /* SDWebImageDecoder.m */,
+				F007C8A11BA62230006C4C08 /* SDWebImageDownloader.h */,
+				F007C8A21BA62230006C4C08 /* SDWebImageDownloader.m */,
+				F007C8A31BA62230006C4C08 /* SDWebImageDownloaderOperation.h */,
+				F007C8A41BA62230006C4C08 /* SDWebImageDownloaderOperation.m */,
+				F007C8A51BA62230006C4C08 /* SDWebImageManager.h */,
+				F007C8A61BA62230006C4C08 /* SDWebImageManager.m */,
+				F007C8A71BA62230006C4C08 /* SDWebImageOperation.h */,
+				F007C8A81BA62230006C4C08 /* SDWebImagePrefetcher.h */,
+				F007C8A91BA62230006C4C08 /* SDWebImagePrefetcher.m */,
+				F007C8AA1BA62230006C4C08 /* UIButton+WebCache.h */,
+				F007C8AB1BA62230006C4C08 /* UIButton+WebCache.m */,
+				F007C8AC1BA62230006C4C08 /* UIImage+GIF.h */,
+				F007C8AD1BA62230006C4C08 /* UIImage+GIF.m */,
+				F007C8AE1BA62230006C4C08 /* UIImage+MultiFormat.h */,
+				F007C8AF1BA62230006C4C08 /* UIImage+MultiFormat.m */,
+				F007C8B01BA62230006C4C08 /* UIImage+WebP.h */,
+				F007C8B11BA62230006C4C08 /* UIImage+WebP.m */,
+				F007C8B21BA62230006C4C08 /* UIImageView+HighlightedWebCache.h */,
+				F007C8B31BA62230006C4C08 /* UIImageView+HighlightedWebCache.m */,
+				F007C8B41BA62230006C4C08 /* UIImageView+WebCache.h */,
+				F007C8B51BA62230006C4C08 /* UIImageView+WebCache.m */,
+				F007C8B61BA62230006C4C08 /* UIView+WebCacheOperation.h */,
+				F007C8B71BA62230006C4C08 /* UIView+WebCacheOperation.m */,
+			);
+			name = SDWebImage;
+			sourceTree = "<group>";
+		};
+		F09070D237EEBE92DF6D133D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F04ADD481BA47F9300B321DE /* libTVVLCKit.a */,
+				F08C127E1BA24D7B0049A63A /* SystemConfiguration.framework */,
+				F08C12791BA249E60049A63A /* MobileVLCKit.framework */,
+				F08C12761BA2458D0049A63A /* libstdc++.tbd */,
+				F08C12741BA245850049A63A /* libbz2.tbd */,
+				F08C12721BA245790049A63A /* libiconv.tbd */,
+				F08C12701BA245740049A63A /* libxml2.tbd */,
+				F08C126E1BA2456B0049A63A /* CoreGraphics.framework */,
+				F08C126C1BA245670049A63A /* OpenGLES.framework */,
+				F08C126A1BA245610049A63A /* AudioToolbox.framework */,
+				F08C12681BA245560049A63A /* Security.framework */,
+				F08C12661BA245510049A63A /* AVFoundation.framework */,
+				F08C12641BA2454D0049A63A /* CoreText.framework */,
+				F08C12621BA245480049A63A /* QuartzCore.framework */,
+				F0CDE5021BA220B8000A969B /* GoogleCast.framework */,
+				F0CDE4FC1BA21A3D000A969B /* CFNetwork.framework */,
+				F0CDE4FA1BA21A2E000A969B /* MediaPlayer.framework */,
+				F0CDE4F21BA21A0B000A969B /* libz.tbd */,
+				C94C9BB2B93457865F0F2EB6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0CDE3DE1BA20C6D000A969B = {
+			isa = PBXGroup;
+			children = (
+				F0CDE3E91BA20C6D000A969B /* TvhClient-Tv */,
+				F0CDE4031BA20C6D000A969B /* TvhClient-TvTests */,
+				F0CDE3E81BA20C6D000A969B /* Products */,
+				4ED5E6BA5C4CFDEDA8FFD52A /* Pods */,
+				F09070D237EEBE92DF6D133D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F0CDE3E81BA20C6D000A969B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0CDE3E71BA20C6D000A969B /* TvhClient-Tv.app */,
+				F0CDE4001BA20C6D000A969B /* TvhClient-TvTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0CDE3E91BA20C6D000A969B /* TvhClient-Tv */ = {
+			isa = PBXGroup;
+			children = (
+				F007C86F1BA4CEAE006C4C08 /* Channels */,
+				F0CDE40F1BA20D57000A969B /* Model */,
+				F0CDE3ED1BA20C6D000A969B /* AppDelegate.h */,
+				F0CDE3EE1BA20C6D000A969B /* AppDelegate.m */,
+				F0CDE3F01BA20C6D000A969B /* FirstViewController.h */,
+				F0CDE3F11BA20C6D000A969B /* FirstViewController.m */,
+				F0CDE3F31BA20C6D000A969B /* SecondViewController.h */,
+				F0CDE3F41BA20C6D000A969B /* SecondViewController.m */,
+				F007C8C81BA622F4006C4C08 /* TVHImageCache.h */,
+				F007C8C91BA622F4006C4C08 /* TVHImageCache.m */,
+				F0CDE4511BA2134D000A969B /* vlc */,
+				F0CDE3F61BA20C6D000A969B /* Main.storyboard */,
+				F0CDE3F91BA20C6D000A969B /* Assets.xcassets */,
+				F0CDE3FB1BA20C6D000A969B /* Info.plist */,
+				F0CDE3EA1BA20C6D000A969B /* Supporting Files */,
+			);
+			path = "TvhClient-Tv";
+			sourceTree = "<group>";
+		};
+		F0CDE3EA1BA20C6D000A969B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F007C87E1BA61FE1006C4C08 /* SDWebImage */,
+				F0CDE3EB1BA20C6D000A969B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0CDE4031BA20C6D000A969B /* TvhClient-TvTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0CDE4041BA20C6D000A969B /* TvhClient_TvTests.m */,
+				F0CDE4061BA20C6D000A969B /* Info.plist */,
+			);
+			path = "TvhClient-TvTests";
+			sourceTree = "<group>";
+		};
+		F0CDE40F1BA20D57000A969B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0CDE44B1BA20FF5000A969B /* Analytics / Debug */,
+				F0CDE4101BA20E30000A969B /* tvheadend-ios-lib.xcodeproj */,
+				F0CDE43C1BA20FE8000A969B /* NSString+FileSize.h */,
+				F0CDE43D1BA20FE8000A969B /* NSString+FileSize.m */,
+				F0CDE4421BA20FE8000A969B /* TVHSettings.h */,
+				F0CDE4431BA20FE8000A969B /* TVHSettings.m */,
+				F0CDE4441BA20FE8000A969B /* TVHSingletonServer.h */,
+				F0CDE4451BA20FE8000A969B /* TVHSingletonServer.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F0CDE4111BA20E30000A969B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0CDE4161BA20E30000A969B /* libtvheadend-ios-lib.a */,
+				F0CDE4181BA20E30000A969B /* tvheadend-ios-libTests.xctest */,
+				F0CDE4F71BA21A0B000A969B /* libtvheadend-tvOS-lib.a */,
+				F0CDE4F91BA21A0B000A969B /* tvheadend-tvOS-libTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0CDE44B1BA20FF5000A969B /* Analytics / Debug */ = {
+			isa = PBXGroup;
+			children = (
+				F0CDE44E1BA212AE000A969B /* TVHAnalytics.h */,
+				F0CDE44F1BA212AE000A969B /* TVHAnalytics.m */,
+				F0CDE43E1BA20FE8000A969B /* TVHDebugLytics.h */,
+				F0CDE43F1BA20FE8000A969B /* TVHDebugLytics.m */,
+				F0CDE4401BA20FE8000A969B /* TVHModelAnalytics.h */,
+				F0CDE4411BA20FE8000A969B /* TVHModelAnalytics.m */,
+			);
+			name = "Analytics / Debug";
+			sourceTree = "<group>";
+		};
+		F0CDE4511BA2134D000A969B /* vlc */ = {
+			isa = PBXGroup;
+			children = (
+				F0CDE4521BA2134D000A969B /* VLCConstants.h */,
+			);
+			path = vlc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0CDE3E61BA20C6D000A969B /* TvhClient-Tv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0CDE4091BA20C6D000A969B /* Build configuration list for PBXNativeTarget "TvhClient-Tv" */;
+			buildPhases = (
+				2E3DB84AFCD0E64EB86341E2 /* Check Pods Manifest.lock */,
+				F0CDE3E31BA20C6D000A969B /* Sources */,
+				F0CDE3E41BA20C6D000A969B /* Frameworks */,
+				F0CDE3E51BA20C6D000A969B /* Resources */,
+				0EE5DA388519FAB09899370F /* Embed Pods Frameworks */,
+				C45014A3552DE5047C271FAD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0CDE4FF1BA22063000A969B /* PBXTargetDependency */,
+			);
+			name = "TvhClient-Tv";
+			productName = "TvhClient-Tv";
+			productReference = F0CDE3E71BA20C6D000A969B /* TvhClient-Tv.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0CDE3FF1BA20C6D000A969B /* TvhClient-TvTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0CDE40C1BA20C6D000A969B /* Build configuration list for PBXNativeTarget "TvhClient-TvTests" */;
+			buildPhases = (
+				F0CDE3FC1BA20C6D000A969B /* Sources */,
+				F0CDE3FD1BA20C6D000A969B /* Frameworks */,
+				F0CDE3FE1BA20C6D000A969B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0CDE4021BA20C6D000A969B /* PBXTargetDependency */,
+			);
+			name = "TvhClient-TvTests";
+			productName = "TvhClient-TvTests";
+			productReference = F0CDE4001BA20C6D000A969B /* TvhClient-TvTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0CDE3DF1BA20C6D000A969B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Luis Fernandes";
+				TargetAttributes = {
+					F0CDE3E61BA20C6D000A969B = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = FPS864GPA9;
+					};
+					F0CDE3FF1BA20C6D000A969B = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = F0CDE3E61BA20C6D000A969B;
+					};
+				};
+			};
+			buildConfigurationList = F0CDE3E21BA20C6D000A969B /* Build configuration list for PBXProject "TvhClient-Tv" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0CDE3DE1BA20C6D000A969B;
+			productRefGroup = F0CDE3E81BA20C6D000A969B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F0CDE4111BA20E30000A969B /* Products */;
+					ProjectRef = F0CDE4101BA20E30000A969B /* tvheadend-ios-lib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F0CDE3E61BA20C6D000A969B /* TvhClient-Tv */,
+				F0CDE3FF1BA20C6D000A969B /* TvhClient-TvTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F0CDE4161BA20E30000A969B /* libtvheadend-ios-lib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libtvheadend-ios-lib.a";
+			remoteRef = F0CDE4151BA20E30000A969B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F0CDE4181BA20E30000A969B /* tvheadend-ios-libTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "tvheadend-ios-libTests.xctest";
+			remoteRef = F0CDE4171BA20E30000A969B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F0CDE4F71BA21A0B000A969B /* libtvheadend-tvOS-lib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libtvheadend-tvOS-lib.a";
+			remoteRef = F0CDE4F61BA21A0B000A969B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F0CDE4F91BA21A0B000A969B /* tvheadend-tvOS-libTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "tvheadend-tvOS-libTests.xctest";
+			remoteRef = F0CDE4F81BA21A0B000A969B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0CDE3E51BA20C6D000A969B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CDE3FA1BA20C6D000A969B /* Assets.xcassets in Resources */,
+				F0CDE3F81BA20C6D000A969B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CDE3FE1BA20C6D000A969B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EE5DA388519FAB09899370F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E3DB84AFCD0E64EB86341E2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C45014A3552DE5047C271FAD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0CDE3E31BA20C6D000A969B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CDE3F51BA20C6D000A969B /* SecondViewController.m in Sources */,
+				F007C8C41BA62230006C4C08 /* UIImage+WebP.m in Sources */,
+				F007C87A1BA4D60B006C4C08 /* TVHChannelViewCell.m in Sources */,
+				F0CDE4481BA20FE8000A969B /* TVHModelAnalytics.m in Sources */,
+				F0CDE3EF1BA20C6D000A969B /* AppDelegate.m in Sources */,
+				F0CDE4491BA20FE8000A969B /* TVHSettings.m in Sources */,
+				F0CDE4471BA20FE8000A969B /* TVHDebugLytics.m in Sources */,
+				F007C8BE1BA62230006C4C08 /* SDWebImageDownloaderOperation.m in Sources */,
+				F0CDE3F21BA20C6D000A969B /* FirstViewController.m in Sources */,
+				F007C8BA1BA62230006C4C08 /* SDImageCache.m in Sources */,
+				F0CDE3EC1BA20C6D000A969B /* main.m in Sources */,
+				F0CDE44A1BA20FE8000A969B /* TVHSingletonServer.m in Sources */,
+				F007C87D1BA4FE40006C4C08 /* TVHChannelHeaderCell.m in Sources */,
+				F007C8BB1BA62230006C4C08 /* SDWebImageCompat.m in Sources */,
+				F007C8B91BA62230006C4C08 /* NSData+ImageContentType.m in Sources */,
+				F007C8771BA4D3DC006C4C08 /* TVHChannelCollectionViewController.m in Sources */,
+				F007C8BF1BA62230006C4C08 /* SDWebImageManager.m in Sources */,
+				F007C8BD1BA62230006C4C08 /* SDWebImageDownloader.m in Sources */,
+				F007C8C61BA62230006C4C08 /* UIImageView+WebCache.m in Sources */,
+				F007C8CA1BA622F4006C4C08 /* TVHImageCache.m in Sources */,
+				F007C8C51BA62230006C4C08 /* UIImageView+HighlightedWebCache.m in Sources */,
+				F007C8C21BA62230006C4C08 /* UIImage+GIF.m in Sources */,
+				F0CDE4461BA20FE8000A969B /* NSString+FileSize.m in Sources */,
+				F007C8C01BA62230006C4C08 /* SDWebImagePrefetcher.m in Sources */,
+				F007C8C11BA62230006C4C08 /* UIButton+WebCache.m in Sources */,
+				F007C8C31BA62230006C4C08 /* UIImage+MultiFormat.m in Sources */,
+				F007C8BC1BA62230006C4C08 /* SDWebImageDecoder.m in Sources */,
+				F007C8C71BA62230006C4C08 /* UIView+WebCacheOperation.m in Sources */,
+				F0CDE4501BA212AE000A969B /* TVHAnalytics.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CDE3FC1BA20C6D000A969B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CDE4051BA20C6D000A969B /* TvhClient_TvTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0CDE4021BA20C6D000A969B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0CDE3E61BA20C6D000A969B /* TvhClient-Tv */;
+			targetProxy = F0CDE4011BA20C6D000A969B /* PBXContainerItemProxy */;
+		};
+		F0CDE4FF1BA22063000A969B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "tvheadend-tvOS-lib";
+			targetProxy = F0CDE4FE1BA22063000A969B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0CDE3F61BA20C6D000A969B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0CDE3F71BA20C6D000A969B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0CDE4071BA20C6D000A969B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		F0CDE4081BA20C6D000A969B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0CDE40A1BA20C6D000A969B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C054FAF5C493F48B9C887A9 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)/tvheadend-ios-lib/vendor",
+					"$(PROJECT_DIR)/vendor",
+					"/Users/LuisF/dev/tvheadend-iphone-client/Pods/MobileVLCKit/MobileVLCKit-binary/",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/PDKeychainBindingsController\"",
+					"$(SRCROOT)/tvheadend-ios-lib/tvheadend-ios-lib",
+					"$(SRCROOT)/tvheadend-ios-lib/vendor/**",
+					/Users/LuisF/dev/VLCKit/Headers/Public,
+				);
+				INFOPLIST_FILE = "TvhClient-Tv/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/tvheadend-ios-lib/vendor/libssh2-compiled",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zipleen.TvhClient-Tv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		F0CDE40B1BA20C6D000A969B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 414E73BCB7D68222E3F19490 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)/tvheadend-ios-lib/vendor",
+					"$(PROJECT_DIR)/vendor",
+					"/Users/LuisF/dev/tvheadend-iphone-client/Pods/MobileVLCKit/MobileVLCKit-binary/",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/PDKeychainBindingsController\"",
+					"$(SRCROOT)/tvheadend-ios-lib/tvheadend-ios-lib",
+					"$(SRCROOT)/tvheadend-ios-lib/vendor/**",
+					/Users/LuisF/dev/VLCKit/Headers/Public,
+				);
+				INFOPLIST_FILE = "TvhClient-Tv/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/tvheadend-ios-lib/vendor/libssh2-compiled",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zipleen.TvhClient-Tv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		F0CDE40D1BA20C6D000A969B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "TvhClient-TvTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zipleen.TvhClient-TvTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TvhClient-Tv.app/TvhClient-Tv";
+			};
+			name = Debug;
+		};
+		F0CDE40E1BA20C6D000A969B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "TvhClient-TvTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zipleen.TvhClient-TvTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TvhClient-Tv.app/TvhClient-Tv";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0CDE3E21BA20C6D000A969B /* Build configuration list for PBXProject "TvhClient-Tv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CDE4071BA20C6D000A969B /* Debug */,
+				F0CDE4081BA20C6D000A969B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0CDE4091BA20C6D000A969B /* Build configuration list for PBXNativeTarget "TvhClient-Tv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CDE40A1BA20C6D000A969B /* Debug */,
+				F0CDE40B1BA20C6D000A969B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0CDE40C1BA20C6D000A969B /* Build configuration list for PBXNativeTarget "TvhClient-TvTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CDE40D1BA20C6D000A969B /* Debug */,
+				F0CDE40E1BA20C6D000A969B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0CDE3DF1BA20C6D000A969B /* Project object */;
+}
