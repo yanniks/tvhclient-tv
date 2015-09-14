@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TVHTagStore.h"
+#import "TVHChannel.h"
 
-@interface FirstViewController : UIViewController <TVHTagStoreDelegate>
+@interface TVHMovieViewController : UIViewController 
 @property (weak, nonatomic) IBOutlet UIView *movieView;
-
+@property (nonatomic, strong) TVHChannel *channel;
 
 @end
 

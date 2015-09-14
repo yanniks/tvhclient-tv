@@ -1,0 +1,57 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0EFDF2D073A77BC2CB2CF6173E0F3A830E66F8AF" : 0,
+    "E28E36D423EC87798E52E2BF482E9F7A1E6479D6" : 0,
+    "C30491BAA7EBB5D2F31C53D5DA4436F84D2E66DE" : 0,
+    "C8ACE8099371F8DB029F65AEDD39668B25B46185" : 0,
+    "DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8" : 0,
+    "1A56BD2570BAE462A0F868CA59002FC9194D41E6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "36ED968D-7E78-4ADD-8BFD-7D932B76D27A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0EFDF2D073A77BC2CB2CF6173E0F3A830E66F8AF" : "VLCKit\/",
+    "E28E36D423EC87798E52E2BF482E9F7A1E6479D6" : "tvhclient-tv\/vendor\/SDWebImage\/",
+    "C30491BAA7EBB5D2F31C53D5DA4436F84D2E66DE" : "tvheadend-iphone-client\/",
+    "C8ACE8099371F8DB029F65AEDD39668B25B46185" : "tvhclient-tv\/tvheadend-ios-lib\/",
+    "DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8" : "tvhclient-tv\/tvheadend-ios-lib\/vendor\/AFNetworking\/",
+    "1A56BD2570BAE462A0F868CA59002FC9194D41E6" : "tvhclient-tv\/tvheadend-ios-lib\/vendor\/AFNetworking-ProxyQueue\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TvhClient-Tv",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TvhClient-Tv.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.videolan.org\/videolan\/VLCKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0EFDF2D073A77BC2CB2CF6173E0F3A830E66F8AF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mystcolor\/AFNetworking-ProxyQueue.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1A56BD2570BAE462A0F868CA59002FC9194D41E6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:zipleen\/tvheadend-iphone-client.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C30491BAA7EBB5D2F31C53D5DA4436F84D2E66DE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zipleen\/tvheadend-ios-lib.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C8ACE8099371F8DB029F65AEDD39668B25B46185"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/github.com\/AFNetworking\/AFNetworking.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rs\/SDWebImage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E28E36D423EC87798E52E2BF482E9F7A1E6479D6"
+    }
+  ]
+}

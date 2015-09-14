@@ -10,22 +10,22 @@
 #import "UIImageView+WebCache.h"
 #import "TVHImageCache.h"
 
-#import "TVHChannelViewCell.h"
+#import "TVHChannelTagViewCell.h"
 #import "TVHChannelHeaderCell.h"
 #import "TVHSingletonServer.h"
 #import "TVHSettings.h"
 #import "TVHTag.h"
+#import "TVHMovieViewController.h"
+
 
 @interface TVHChannelCollectionViewController ()
 @property (weak, nonatomic) id <TVHTagStore> tagStore;
-@property (weak, nonatomic) id <TVHChannelStore> channelStore;
 @property (strong, nonatomic) NSArray *tags;
-@property (strong, nonatomic) NSArray *channels;
+
 @end
 
 @implementation TVHChannelCollectionViewController
 
-static NSString * const reuseIdentifier = @"ChannelCell";
 
 - (id <TVHTagStore>)tagStore {
     if ( _tagStore == nil) {
@@ -34,12 +34,7 @@ static NSString * const reuseIdentifier = @"ChannelCell";
     return _tagStore;
 }
 
-- (id <TVHChannelStore>)channelList {
-    if ( _channelStore == nil) {
-        _channelStore = [[TVHSingletonServer sharedServerInstance] channelStore];
-    }
-    return _channelStore;
-}
+
 
 - (void)initDelegate {
     if( [self.tagStore delegate] ) {
@@ -49,15 +44,6 @@ static NSString * const reuseIdentifier = @"ChannelCell";
                                                    object:self.tagStore];
     } else {
         [self.tagStore setDelegate:self];
-    }
-    
-    if( [self.channelList delegate] ) {
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(didLoadChannels)
-                                                     name:TVHChannelStoreDidLoadNotification
-                                                   object:self.channelList];
-    } else {
-        [self.channelList setDelegate:self];
     }
 
 }
@@ -76,7 +62,7 @@ static NSString * const reuseIdentifier = @"ChannelCell";
     if( [settings selectedServer] == NSNotFound ) {
         NSDictionary *new = [settings newServer];
         NSDictionary *server = @{TVHS_SERVER_NAME:@"london",
-                                 TVHS_IP_KEY:@"bananapi1",
+                                 TVHS_IP_KEY:@"localhost",
                                  TVHS_PORT_KEY:@"9981",
                                  TVHS_HTSP_PORT_KEY:@"9982",
                                  TVHS_USERNAME_KEY:@"",
@@ -99,7 +85,7 @@ static NSString * const reuseIdentifier = @"ChannelCell";
     }
     
     // Uncomment the following line to preserve selection between presentations
-    self.clearsSelectionOnViewWillAppear = NO;
+    //self.clearsSelectionOnViewWillAppear = NO;
     
     [self resetControllerData];
 }
@@ -108,7 +94,6 @@ static NSString * const reuseIdentifier = @"ChannelCell";
     self.tags = nil;
     [self initDelegate];
     [self.tagStore fetchTagList];
-    [self.channelStore fetchChannelList];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -121,20 +106,17 @@ static NSString * const reuseIdentifier = @"ChannelCell";
     [self.collectionView reloadData];
 }
 
-- (void)didLoadChannels {
-    self.channels = [[self.channelStore channels] copy];
-    [self.collectionView reloadData];
-}
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"Play Movie"]) {
+        TVHMovieViewController *movieController = (TVHMovieViewController*)[segue destinationViewController];
+        movieController.channel = self.selectedChannel;
+    }
 }
-*/
+
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
@@ -159,24 +141,22 @@ static NSString * const reuseIdentifier = @"ChannelCell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    TVHTag *tag = [self.tags objectAtIndex:section];
-    return [tag channelCount];
+    return 1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    TVHChannelViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    TVHChannelTagViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TagChannelCell" forIndexPath:indexPath];
     
     TVHTag *tag = [self.tags objectAtIndex:indexPath.section];
-    TVHChannel *channel = [[tag channels] objectAtIndex:indexPath.item];
+    cell.collectionViewController = self;
+    [cell configureWithTag:tag];
     
-    cell.channelName.text = channel.name;
-    [cell.channelImage sd_setImageWithURL:[NSURL URLWithString:channel.imageUrl] placeholderImage:[UIImage imageNamed:@"tag.png"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        if (!error && image) {
-            cell.channelImage.image = [TVHImageCache resizeImage:image];
-        }
-    } ];
     
     return cell;
+}
+
+- (BOOL)collectionView:(UICollectionView *)collectionView canFocusItemAtIndexPath:(NSIndexPath *)indexPath {
+    return NO;
 }
 
 #pragma mark <UICollectionViewDelegate>

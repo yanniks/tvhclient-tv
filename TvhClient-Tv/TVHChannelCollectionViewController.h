@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "TVHTagStore.h"
-#import "TVHChannelStore.h"
+#import "TVHChannel.h"
 
-@interface TVHChannelCollectionViewController : UICollectionViewController <TVHTagStoreDelegate, TVHChannelStoreDelegate>
-
+@interface TVHChannelCollectionViewController : UICollectionViewController <TVHTagStoreDelegate>
+@property (nonatomic, weak) TVHChannel *selectedChannel;
 @end

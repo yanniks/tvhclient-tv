@@ -10,4 +10,11 @@
 
 @implementation TVHChannelViewCell
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.channelImage.adjustsImageWhenAncestorFocused = true;
+    self.channelImage.clipsToBounds = false;
+}
+
+
 @end

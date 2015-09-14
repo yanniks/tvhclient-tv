@@ -27,7 +27,8 @@
 		F007C8C61BA62230006C4C08 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8B51BA62230006C4C08 /* UIImageView+WebCache.m */; };
 		F007C8C71BA62230006C4C08 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8B71BA62230006C4C08 /* UIView+WebCacheOperation.m */; };
 		F007C8CA1BA622F4006C4C08 /* TVHImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8C91BA622F4006C4C08 /* TVHImageCache.m */; };
-		F04ADD491BA47F9300B321DE /* libTVVLCKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F04ADD481BA47F9300B321DE /* libTVVLCKit.a */; };
+		F007C8D11BA62E1A006C4C08 /* TVHChannelTagViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F007C8D01BA62E1A006C4C08 /* TVHChannelTagViewCell.m */; };
+		F0896BDA1BDA3F9000B6892B /* libTVVLCKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0896BD91BDA3F9000B6892B /* libTVVLCKit.a */; };
 		F08C12631BA245480049A63A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C12621BA245480049A63A /* QuartzCore.framework */; };
 		F08C12651BA2454D0049A63A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C12641BA2454D0049A63A /* CoreText.framework */; };
 		F08C12671BA245510049A63A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C12661BA245510049A63A /* AVFoundation.framework */; };
@@ -42,8 +43,7 @@
 		F08C127F1BA24D7B0049A63A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C127E1BA24D7B0049A63A /* SystemConfiguration.framework */; };
 		F0CDE3EC1BA20C6D000A969B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE3EB1BA20C6D000A969B /* main.m */; };
 		F0CDE3EF1BA20C6D000A969B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE3EE1BA20C6D000A969B /* AppDelegate.m */; };
-		F0CDE3F21BA20C6D000A969B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE3F11BA20C6D000A969B /* FirstViewController.m */; };
-		F0CDE3F51BA20C6D000A969B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE3F41BA20C6D000A969B /* SecondViewController.m */; };
+		F0CDE3F21BA20C6D000A969B /* TVHMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE3F11BA20C6D000A969B /* TVHMovieViewController.m */; };
 		F0CDE3F81BA20C6D000A969B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CDE3F61BA20C6D000A969B /* Main.storyboard */; };
 		F0CDE3FA1BA20C6D000A969B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CDE3F91BA20C6D000A969B /* Assets.xcassets */; };
 		F0CDE4051BA20C6D000A969B /* TvhClient_TvTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CDE4041BA20C6D000A969B /* TvhClient_TvTests.m */; };
@@ -147,7 +147,9 @@
 		F007C8B71BA62230006C4C08 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "vendor/SDWebImage/SDWebImage/UIView+WebCacheOperation.m"; sourceTree = SOURCE_ROOT; };
 		F007C8C81BA622F4006C4C08 /* TVHImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVHImageCache.h; sourceTree = "<group>"; };
 		F007C8C91BA622F4006C4C08 /* TVHImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVHImageCache.m; sourceTree = "<group>"; };
-		F04ADD481BA47F9300B321DE /* libTVVLCKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTVVLCKit.a; path = "../VLCKit/build/Debug-appletvos/libTVVLCKit.a"; sourceTree = "<group>"; };
+		F007C8CF1BA62E1A006C4C08 /* TVHChannelTagViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVHChannelTagViewCell.h; sourceTree = "<group>"; };
+		F007C8D01BA62E1A006C4C08 /* TVHChannelTagViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVHChannelTagViewCell.m; sourceTree = "<group>"; };
+		F0896BD91BDA3F9000B6892B /* libTVVLCKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTVVLCKit.a; path = "vendor/VLCKit-tvOS/libTVVLCKit.a"; sourceTree = "<group>"; };
 		F08C12621BA245480049A63A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F08C12641BA2454D0049A63A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		F08C12661BA245510049A63A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -159,16 +161,13 @@
 		F08C12721BA245790049A63A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		F08C12741BA245850049A63A /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		F08C12761BA2458D0049A63A /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
-		F08C12791BA249E60049A63A /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileVLCKit.framework; path = "../tvheadend-iphone-client/Pods/MobileVLCKit/MobileVLCKit-binary/MobileVLCKit.framework"; sourceTree = "<group>"; };
 		F08C127E1BA24D7B0049A63A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F0CDE3E71BA20C6D000A969B /* TvhClient-Tv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TvhClient-Tv.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CDE3EB1BA20C6D000A969B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0CDE3ED1BA20C6D000A969B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0CDE3EE1BA20C6D000A969B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F0CDE3F01BA20C6D000A969B /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		F0CDE3F11BA20C6D000A969B /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		F0CDE3F31BA20C6D000A969B /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		F0CDE3F41BA20C6D000A969B /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F0CDE3F01BA20C6D000A969B /* TVHMovieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVHMovieViewController.h; sourceTree = "<group>"; };
+		F0CDE3F11BA20C6D000A969B /* TVHMovieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVHMovieViewController.m; sourceTree = "<group>"; };
 		F0CDE3F71BA20C6D000A969B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0CDE3F91BA20C6D000A969B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0CDE3FB1BA20C6D000A969B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -200,9 +199,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04ADD491BA47F9300B321DE /* libTVVLCKit.a in Frameworks */,
 				F08C127F1BA24D7B0049A63A /* SystemConfiguration.framework in Frameworks */,
 				F08C12771BA2458D0049A63A /* libstdc++.tbd in Frameworks */,
+				F0896BDA1BDA3F9000B6892B /* libTVVLCKit.a in Frameworks */,
 				F08C12751BA245850049A63A /* libbz2.tbd in Frameworks */,
 				F0CDE4F31BA21A0B000A969B /* libz.tbd in Frameworks */,
 				F08C12731BA245790049A63A /* libiconv.tbd in Frameworks */,
@@ -245,10 +244,14 @@
 			children = (
 				F007C8751BA4D3DC006C4C08 /* TVHChannelCollectionViewController.h */,
 				F007C8761BA4D3DC006C4C08 /* TVHChannelCollectionViewController.m */,
-				F007C8781BA4D60B006C4C08 /* TVHChannelViewCell.h */,
-				F007C8791BA4D60B006C4C08 /* TVHChannelViewCell.m */,
 				F007C87B1BA4FE40006C4C08 /* TVHChannelHeaderCell.h */,
 				F007C87C1BA4FE40006C4C08 /* TVHChannelHeaderCell.m */,
+				F007C8CF1BA62E1A006C4C08 /* TVHChannelTagViewCell.h */,
+				F007C8D01BA62E1A006C4C08 /* TVHChannelTagViewCell.m */,
+				F007C8781BA4D60B006C4C08 /* TVHChannelViewCell.h */,
+				F007C8791BA4D60B006C4C08 /* TVHChannelViewCell.m */,
+				F0CDE3F01BA20C6D000A969B /* TVHMovieViewController.h */,
+				F0CDE3F11BA20C6D000A969B /* TVHMovieViewController.m */,
 			);
 			name = Channels;
 			sourceTree = "<group>";
@@ -294,9 +297,8 @@
 		F09070D237EEBE92DF6D133D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F04ADD481BA47F9300B321DE /* libTVVLCKit.a */,
+				F0896BD91BDA3F9000B6892B /* libTVVLCKit.a */,
 				F08C127E1BA24D7B0049A63A /* SystemConfiguration.framework */,
-				F08C12791BA249E60049A63A /* MobileVLCKit.framework */,
 				F08C12761BA2458D0049A63A /* libstdc++.tbd */,
 				F08C12741BA245850049A63A /* libbz2.tbd */,
 				F08C12721BA245790049A63A /* libiconv.tbd */,
@@ -344,10 +346,6 @@
 				F0CDE40F1BA20D57000A969B /* Model */,
 				F0CDE3ED1BA20C6D000A969B /* AppDelegate.h */,
 				F0CDE3EE1BA20C6D000A969B /* AppDelegate.m */,
-				F0CDE3F01BA20C6D000A969B /* FirstViewController.h */,
-				F0CDE3F11BA20C6D000A969B /* FirstViewController.m */,
-				F0CDE3F31BA20C6D000A969B /* SecondViewController.h */,
-				F0CDE3F41BA20C6D000A969B /* SecondViewController.m */,
 				F007C8C81BA622F4006C4C08 /* TVHImageCache.h */,
 				F007C8C91BA622F4006C4C08 /* TVHImageCache.m */,
 				F0CDE4511BA2134D000A969B /* vlc */,
@@ -613,7 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0CDE3F51BA20C6D000A969B /* SecondViewController.m in Sources */,
+				F007C8D11BA62E1A006C4C08 /* TVHChannelTagViewCell.m in Sources */,
 				F007C8C41BA62230006C4C08 /* UIImage+WebP.m in Sources */,
 				F007C87A1BA4D60B006C4C08 /* TVHChannelViewCell.m in Sources */,
 				F0CDE4481BA20FE8000A969B /* TVHModelAnalytics.m in Sources */,
@@ -621,7 +619,7 @@
 				F0CDE4491BA20FE8000A969B /* TVHSettings.m in Sources */,
 				F0CDE4471BA20FE8000A969B /* TVHDebugLytics.m in Sources */,
 				F007C8BE1BA62230006C4C08 /* SDWebImageDownloaderOperation.m in Sources */,
-				F0CDE3F21BA20C6D000A969B /* FirstViewController.m in Sources */,
+				F0CDE3F21BA20C6D000A969B /* TVHMovieViewController.m in Sources */,
 				F007C8BA1BA62230006C4C08 /* SDImageCache.m in Sources */,
 				F0CDE3EC1BA20C6D000A969B /* main.m in Sources */,
 				F0CDE44A1BA20FE8000A969B /* TVHSingletonServer.m in Sources */,
@@ -774,23 +772,22 @@
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)/tvheadend-ios-lib/vendor",
 					"$(PROJECT_DIR)/vendor",
-					"/Users/LuisF/dev/tvheadend-iphone-client/Pods/MobileVLCKit/MobileVLCKit-binary/",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/PDKeychainBindingsController\"",
-					"$(SRCROOT)/tvheadend-ios-lib/tvheadend-ios-lib",
-					"$(SRCROOT)/tvheadend-ios-lib/vendor/**",
-					/Users/LuisF/dev/VLCKit/Headers/Public,
+					"$(SRCROOT)/vendor/**",
+					"$(SRCROOT)/tvheadend-ios-lib/**",
 				);
 				INFOPLIST_FILE = "TvhClient-Tv/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/tvheadend-ios-lib/vendor/libssh2-compiled",
+					"$(PROJECT_DIR)/vendor/VLCKit-tvOS",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zipleen.TvhClient-Tv";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zipleen.TvhClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -810,23 +807,22 @@
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)/tvheadend-ios-lib/vendor",
 					"$(PROJECT_DIR)/vendor",
-					"/Users/LuisF/dev/tvheadend-iphone-client/Pods/MobileVLCKit/MobileVLCKit-binary/",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/PDKeychainBindingsController\"",
-					"$(SRCROOT)/tvheadend-ios-lib/tvheadend-ios-lib",
-					"$(SRCROOT)/tvheadend-ios-lib/vendor/**",
-					/Users/LuisF/dev/VLCKit/Headers/Public,
+					"$(SRCROOT)/vendor/**",
+					"$(SRCROOT)/tvheadend-ios-lib/**",
 				);
 				INFOPLIST_FILE = "TvhClient-Tv/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/tvheadend-ios-lib/vendor/libssh2-compiled",
+					"$(PROJECT_DIR)/vendor/VLCKit-tvOS",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zipleen.TvhClient-Tv";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zipleen.TvhClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
